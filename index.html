@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Bill Payment</title>
+    <link rel="stylesheet" href="./bill.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Swat Foundation and Hospital</h1>
+        <h1>Hospital Bill Payment</h1>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" name="patientName" required>
+            </div>
+            <div class="form-group">
+                <label for="patientId">Patient ID:</label>
+                <input type="text" id="patientId" name="patientId" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="debitCard">Debit Card</option>
+                    <option value="easypaisa">Easypaisa</option>
+                    <option value="bankTransfer">Bank Transfer</option>
+                    <option value="Ria">Ria</option>
+                </select>
+            </div>
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+    <script src="./bill.js"></script>
+</body>
+</html>
